@@ -4,7 +4,7 @@
 
 * 출간일: 2025년 X월 X일
 * 25년 X월 X일 기준의 원본 코드를 Fork 하였습니다.
-* 필요시 원저자가 코드를 업데이트 할 수 있습니다. 최신 버전은 원저자의 [코드 Repository](https://github.com/PacktPublishing/LLM-Engineers-Handbook)를 참고하세요.
+* 필요시 원저자가 코드를 업데이트 할 수 있습니다. 최신 버전의 코드는 원저자의 [코드 Repository](https://github.com/PacktPublishing/LLM-Engineers-Handbook)를 참고하세요.
 * 오탈자 등 책과 관련된 문의는 xxxxx에 남겨 주세요.
 * 도서 정보
   * [교보문고](https://store.kyobobook.co.kr/)
