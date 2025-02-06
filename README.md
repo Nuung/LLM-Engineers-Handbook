@@ -1,3 +1,28 @@
+## LLM Engineer's Handbook(가칭)
+
+(도서 이미지 추가)
+
+* 출간일: 2025년 X월 X일
+* 25년 X월 X일 기준의 원서 코드를 Fork 하였습니다.
+* 최신 코드는 원저자의 [코드 Repository](https://github.com/PacktPublishing/Python-Microservices-Development)를 참고하세요.
+* 오탈자 등 책과 관련된 문의는 xxxxx에 남겨 주세요.
+* 도서 정보
+  * [교보문고](https://store.kyobobook.co.kr/)
+  * [예스24](https://www.yes24.com/)
+* 코드 실행 환경
+  * Windows 11 Home
+  * Python 3.11
+  * Poetry 1.8.3
+  * Docker 27.4.0
+  * AWS CLI 2.23.0
+  * Git 2.47.1
+  * ZenML 0.73
+  * VS Code 1.96.4
+* 실행 오류 해결
+
+  
+<hr>
+
 <div align="center">
   <h1>👷 LLM Engineer's Handbook</h1>
   <p class="tagline">Official repository of the <a href="https://www.amazon.com/LLM-Engineers-Handbook-engineering-production/dp/1836200072/">LLM Engineer's Handbook</a> by <a href="https://github.com/iusztinpaul">Paul Iusztin</a> and <a href="https://github.com/mlabonne">Maxime Labonne</a></p>
