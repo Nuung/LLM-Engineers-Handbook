@@ -5,7 +5,7 @@
 ## 📅 출간 정보
 - **출간일**: 2025년 X월 X일
 - **원본 코드 Fork 날짜**: 2025년 X월 X일
-- 필요시 원저자가 코드를 업데이트할 수 있습니다. 최신 버전의 코드는 원저자의 [코드 Repository](https://github.com/PacktPublishing/LLM-Engineers-Handbook)에서 확인하세요.
+- 최신 버전의 코드는 원저자의 [코드 Repository](https://github.com/PacktPublishing/LLM-Engineers-Handbook)에서 확인하세요.
 - 오탈자 및 책 관련 문의는 `xxxxx`에 남겨주세요.
 
 ## 📚 도서 정보
@@ -17,7 +17,7 @@
 ## 💻 코드 실행 환경
 | 소프트웨어  | 버전 |
 |------------|------|
-| Windows    | 11 Home |
+| **Windows**    | 11 Home |
 | Python     | 3.11 |
 | Poetry     | 1.8.3 |
 | Docker     | 27.4.0 |
@@ -85,7 +85,7 @@ Default output format [None]: json
 
 ---
 
-### 4. `ZenML` 대시보드 접속 정보
+### 4. `ZenML` 대시보드 접속 방법
 - **URL:** [http://127.0.0.1:8237/](http://127.0.0.1:8237/)
 - **Username:** `default`
 - **Password:** 없음
