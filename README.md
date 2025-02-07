@@ -58,8 +58,7 @@ Please use the --blocking flag to run the server in blocking mode, or run the se
 - `ZenML` 서버가 Windows에서 백그라운드 프로세스로 실행되지 않음
 
 **해결 방법:**
-- `pyproject.toml` 파일에서 `poetry run zenml up` 뒤에 `--blocking` 추가
-
+- `pyproject.toml` 파일에서 `poetry run zenml up` 뒤에 `--blocking` 추가(현재 pyproject.toml 파일에 반영 완료)
 ---
 
 ### 3. AWS 자격 증명 오류
