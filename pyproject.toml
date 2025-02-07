@@ -143,10 +143,10 @@ control.expr = "sys.platform"
 [[tool.poe.tasks.local-zenml-server-up.switch]]
 case = "darwin"
 env = { OBJC_DISABLE_INITIALIZE_FORK_SAFETY = "YES" }
-cmd = "poetry run zenml up"
+cmd = "poetry run zenml up" --blocking" # default: "poetry run zenml up"
 
 [[tool.poe.tasks.local-zenml-server-up.switch]]
-cmd = "poetry run zenml up"
+cmd = "poetry run zenml up" --blocking" # default: "poetry run zenml up"
 
 # Tests
 [tool.poe.tasks.test]
