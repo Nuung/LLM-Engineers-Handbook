@@ -93,56 +93,7 @@ Default output format [None]: json
 ---
 
 ## 🔗 참고 자료
-코드 실행에 대한 자세한 내용은 아래를 참고하세요.
-
----
-
-
-
-## LLM Engineer's Handbook(가칭)
-
-(도서 이미지 추가)
-
-* 출간일: 2025년 X월 X일
-* 25년 X월 X일 기준의 원본 코드를 Fork 하였습니다.
-* 필요시 원저자가 코드를 업데이트 할 수 있습니다. 최신 버전의 코드는 원저자의 [코드 Repository](https://github.com/PacktPublishing/LLM-Engineers-Handbook)를 참고하세요.
-* 오탈자 등 책과 관련된 문의는 xxxxx에 남겨 주세요.
-* 도서 정보
-  * [교보문고](https://store.kyobobook.co.kr/)
-  * [예스24](https://www.yes24.com/)
-* 코드 실행 환경
-  * Windows 11 Home
-  * Python 3.11
-  * Poetry 1.8.3
-  * Docker 27.4.0
-  * AWS CLI 2.23.0
-  * Git 2.47.1
-  * ZenML 0.73
-  * VS Code 1.96.4
-* 에러 해결
-  - 에러 메시지: torch 라이브러리의 fbgemm.dll을 찾을수 없습니다.
-    원인: torch 패키지가 제대로 설치되지 않았거나, DLL 파일이 손상됨
-    해결: torch 재설치
-poetry run pip uninstall torch -y
-poetry run pip cache purge  # 캐시 삭제
-poetry run pip install torch --index-url https://download.pytorch.org/whl/cpu
-
-에러 메시지: Error: Running the ZenML server locally as a background process is not supported on Windows. Please use the --blocking flag to run the server in blocking mode, or run the server in a Docker container by setting --docker instead.
-원인: ZenML 서버가 Windows에서 백그라운드 프로세스로 실행되지 않음
-해결: ZenML을 백그라운드가 아닌 포그라운드(Blocking) 모드로 실행
-pyproject.toml 파일에서 poetry run zenml up 뒤에 --blocking 추가
-
-에러 메시지: ValueError: Must setup local AWS configuration with a region supported by SageMaker.
-원인: aws 자격증명이 안됨
-해결: 터미널에서 아래 명령어로 aws 자격증명 정보 입력
-AWS Access Key ID [None]: <YOUR_ACCESS_KEY>
-AWS Secret Access Key [None]: <YOUR_SECRET_KEY>
-Default region name [None]: ap-northeast-2
-Default output format [None]: json
-
-기타: zenml 대시보드(http://127.0.0.1:8237/) 접속시 username은 default, password는 없음
-
-* 코드 실행에 대한 자세한 내용은 아래를 참고하세요.
+코드 실행에 대한 자세한 설명은 아래를 참고하세요.
 
   
 <hr>
