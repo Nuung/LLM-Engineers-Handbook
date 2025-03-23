@@ -6,7 +6,7 @@
 - **출간일**: 2025년 X월 X일
 - **원본 코드 Fork 날짜**: 2025년 2월 7일
 - 최신 버전의 코드는 원저자의 [코드 Repository](https://github.com/PacktPublishing/LLM-Engineers-Handbook)에서 확인하세요.
-- 오탈자 및 책 관련 문의는 `xxxxx`에 남겨주세요.
+- 오탈자 및 책 관련 문의는 한빛미디어 홈페이지 www.hanbit.co.kr / 이메일 ask@hanbit.co.kr 에 남겨주세요.
 
 ## 📚 도서 정보
 - [교보문고](https://store.kyobobook.co.kr/)
