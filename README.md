@@ -1,4 +1,4 @@
-# LLM Engineer's Handbook (가칭)
+# LLM 엔지니어링
 
 ![도서 이미지](#)  <!-- 이미지 추가 필요 -->
 
