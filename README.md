@@ -1,5 +1,5 @@
 # LLM 엔지니어링
-![img](https://github.com/user-attachments/assets/16ef9817-ea6f-4eae-b2e9-8037b8950015)
+![image](https://github.com/user-attachments/assets/68b1c6f1-6cb4-40bd-9331-d4dadd5624c4)
 
 
 ## 📅 출간 정보
