@@ -9,8 +9,9 @@
 - 오탈자 및 책 관련 문의는 한빛미디어 홈페이지 www.hanbit.co.kr / 이메일 ask@hanbit.co.kr 에 남겨주세요.
 
 ## 📚 도서 정보
-- [교보문고](https://store.kyobobook.co.kr/)
-- [예스24](https://www.yes24.com/)
+- [교보문고](https://product.kyobobook.co.kr/detail/S000216392817)
+- [예스24](https://www.yes24.com/product/goods/145962625)
+- [한빛미디어](https://www.hanbit.co.kr/store/books/look.php?p_code=B8130648672)
 
 ---
 
