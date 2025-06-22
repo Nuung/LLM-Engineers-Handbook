@@ -5,9 +5,9 @@ from .push_to_huggingface import push_to_huggingface
 from .query_feature_store import query_feature_store
 
 __all__ = [
+    "create_prompts",
     "generate_intruction_dataset",
     "generate_preference_dataset",
-    "create_prompts",
     "push_to_huggingface",
     "query_feature_store",
 ]

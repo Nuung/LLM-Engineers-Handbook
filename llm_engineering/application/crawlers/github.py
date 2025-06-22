@@ -2,6 +2,7 @@ import os
 import shutil
 import subprocess
 import tempfile
+from pathlib import Path
 
 from loguru import logger
 
@@ -34,7 +35,7 @@ class GithubCrawler(BaseCrawler):
             os.chdir(local_temp)
             subprocess.run(["git", "clone", link])
 
-            repo_path = os.path.join(local_temp, os.listdir(local_temp)[0])  # noqa: PTH118
+            repo_path = str(next(Path(local_temp).iterdir()))
 
             tree = {}
             for root, _, files in os.walk(repo_path):
