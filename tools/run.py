@@ -13,6 +13,7 @@ from pipelines import (
     feature_engineering,
     generate_datasets,
     training,
+    velog_data_etl,
 )
 
 
@@ -64,6 +65,12 @@ Examples:
     help="Whether to run the ETL pipeline.",
 )
 @click.option(
+    "--run-velog-etl",
+    is_flag=True,
+    default=False,
+    help="Whether to run the Velog ETL pipeline.",
+)
+@click.option(
     "--run-export-artifact-to-json",
     is_flag=True,
     default=False,
@@ -73,6 +80,11 @@ Examples:
     "--etl-config-filename",
     default="digital_data_etl_paul_iusztin.yaml",
     help="Filename of the ETL config file.",
+)
+@click.option(
+    "--velog-config-filename",
+    default="velog_data_etl.yaml",
+    help="Filename of the Velog ETL config file.",
 )
 @click.option(
     "--run-feature-engineering",
@@ -114,7 +126,9 @@ def main(
     no_cache: bool = False,
     run_end_to_end_data: bool = False,
     run_etl: bool = False,
+    run_velog_etl: bool = False,
     etl_config_filename: str = "digital_data_etl_paul_iusztin.yaml",
+    velog_config_filename: str = "velog_data_etl.yaml",
     run_export_artifact_to_json: bool = False,
     run_feature_engineering: bool = False,
     run_generate_instruct_datasets: bool = False,
@@ -126,6 +140,7 @@ def main(
     assert (
         run_end_to_end_data
         or run_etl
+        or run_velog_etl
         or run_export_artifact_to_json
         or run_feature_engineering
         or run_generate_instruct_datasets
@@ -157,6 +172,13 @@ def main(
         assert pipeline_args["config_path"].exists(), f"Config file not found: {pipeline_args['config_path']}"
         pipeline_args["run_name"] = f"digital_data_etl_run_{dt.now().strftime('%Y_%m_%d_%H_%M_%S')}"
         digital_data_etl.with_options(**pipeline_args)(**run_args_etl)
+
+    if run_velog_etl:
+        run_args_velog = {}
+        pipeline_args["config_path"] = root_dir / "configs" / velog_config_filename
+        assert pipeline_args["config_path"].exists(), f"Config file not found: {pipeline_args['config_path']}"
+        pipeline_args["run_name"] = f"velog_data_etl_run_{dt.now().strftime('%Y_%m_%d_%H_%M_%S')}"
+        velog_data_etl.with_options(**pipeline_args)(**run_args_velog)
 
     if run_export_artifact_to_json:
         run_args_etl = {}

@@ -8,6 +8,7 @@ from .custom_article import CustomArticleCrawler
 from .github import GithubCrawler
 from .linkedin import LinkedInCrawler
 from .medium import MediumCrawler
+from .velog import VelogCrawler
 
 
 class CrawlerDispatcher:
@@ -32,6 +33,11 @@ class CrawlerDispatcher:
 
     def register_github(self) -> "CrawlerDispatcher":
         self.register("https://github.com", GithubCrawler)
+
+        return self
+
+    def register_velog(self) -> "CrawlerDispatcher":
+        self.register("https://velog.io", VelogCrawler)
 
         return self
 

@@ -68,6 +68,10 @@ class Settings(BaseSettings):
     LINKEDIN_USERNAME: str | None = None
     LINKEDIN_PASSWORD: str | None = None
 
+    # Velog Credentials
+    VELOG_ACCESS_TOKEN: str | None = None
+    VELOG_REFRESH_TOKEN: str | None = None
+
     @property
     def OPENAI_MAX_TOKEN_WINDOW(self) -> int:
         official_max_token_window = {
