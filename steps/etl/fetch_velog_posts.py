@@ -17,7 +17,6 @@ def fetch_velog_posts(
     crawler = VelogCrawler()
     profile_link = f"https://velog.io/@{velog_username}"
     post_ids = crawler.extract(profile_link, user=user)
-
     step_context = get_step_context()
     step_context.add_output_metadata(
         output_name="post_ids", metadata={"num_posts": len(post_ids)}

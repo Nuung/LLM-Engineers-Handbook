@@ -18,7 +18,6 @@ class VelogService:
         return {
             "origin": "https://velog.io",
             "content-type": "application/json",
-        }
 
     def _execute_query(
         self, url: str, query: str, variables: Optional[dict[str, Any]] = None, operation_name: str | None = None
