@@ -11,7 +11,13 @@ from llm_engineering.domain.documents import UserDocument
 
 @step
 def crawl_links(user: UserDocument, links: list[str]) -> Annotated[list[str], "crawled_links"]:
-    dispatcher = CrawlerDispatcher.build().register_linkedin().register_medium().register_github()
+    dispatcher = (
+        CrawlerDispatcher.build()
+        .register_linkedin()
+        .register_medium()
+        .register_github()
+        .register_velog()
+    )
 
     logger.info(f"Starting to crawl {len(links)} link(s).")
 

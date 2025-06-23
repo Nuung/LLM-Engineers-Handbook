@@ -11,19 +11,13 @@ from .constants import GET_POST_QUERY, POSTS_QUERY, V2_URL, V3_URL
 class VelogService:
     """Simple client for the Velog GraphQL API."""
 
-    def __init__(self, access_token: str, refresh_token: str) -> None:
-        self.access_token = access_token
-        self.refresh_token = refresh_token
+    def __init__(self) -> None:
+        pass
 
     def _headers(self) -> dict[str, str]:
-        if not self.access_token or not self.refresh_token:
-            raise ValueError("Velog tokens are missing")
-
         return {
             "origin": "https://velog.io",
             "content-type": "application/json",
-            "cookie": f"access_token={self.access_token}; refresh_token={self.refresh_token}",
-        }
 
     def _execute_query(
         self, url: str, query: str, variables: Optional[dict[str, Any]] = None, operation_name: str | None = None

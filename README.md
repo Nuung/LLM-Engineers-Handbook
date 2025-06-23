@@ -374,6 +374,10 @@ COMET_API_KEY=your_api_key_here
 
 → Check out this [tutorial](https://www.comet.com/docs/opik/?utm_source=llm_handbook&utm_medium=github&utm_campaign=opik) to learn how to get started with Opik. You can also access Opik's dashboard using 🔗[this link](https://www.comet.com/opik?utm_source=llm_handbook&utm_medium=github&utm_content=opik).
 
+#### Velog
+
+Velog에서 공개된 글을 수집할 때는 별도의 토큰이 필요하지 않습니다.
+
 ### 6. Deployment Setup
 
 When deploying the project to the cloud, we must set additional settings for Mongo, Qdrant, and AWS. If you are just working locally, the default values of these env vars will work out of the box. Detailed deployment instructions are available in Chapter 11 of the [LLM Engineer's Handbook](https://www.amazon.com/LLM-Engineers-Handbook-engineering-production/dp/1836200072/).
@@ -594,6 +598,11 @@ Run the data collection ETL:
 poetry poe run-digital-data-etl
 ```
 
+Velog 글을 수집하려면 다음 명령어를 실행하세요:
+```bash
+poetry poe run-velog-data-etl
+```
+
 > [!WARNING]
 > You must have Chrome (or another Chromium-based browser) installed on your system for LinkedIn and Medium crawlers to work (which use Selenium under the hood). Based on your Chrome version, the Chromedriver will be automatically installed to enable Selenium support. Another option is to run everything using our Docker image if you don't want to install Chrome. For example, to run all the pipelines combined you can run `poetry poe run-docker-end-to-end-data-pipeline`. Note that the command can be tweaked to support any other pipeline.
 >
@@ -718,6 +727,8 @@ Based on the setup and usage steps described above, assuming the local and cloud
 ### Data
 
 1. Collect data: `poetry poe run-digital-data-etl`
+   
+   Velog 데이터를 수집하려면 `poetry poe run-velog-data-etl` 명령어를 사용할 수 있습니다.
 
 2. Compute features: `poetry poe run-feature-engineering-pipeline`
 
